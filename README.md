@@ -16,6 +16,7 @@ Some of my *star* quality skills are:
 
 * [Github](https://github.com/gwenchiasson)
 * [Insta](https://www.instagram.com/gc.capture/)
+* Hit me up!
 
 ### Michael Eady
 
