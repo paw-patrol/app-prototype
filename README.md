@@ -37,3 +37,4 @@ Hi, my name is **Michael Eady**. I am **30 years old** and I am a __student__ at
 #### Social Media
 
 * [Instagram](https://www.instagram.com/mikeady88/)
+* [GitHub](https://github.com/mikeady88)
