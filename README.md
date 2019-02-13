@@ -28,3 +28,7 @@ Hi, my name is **Michael Eady**. I am **30 years old** and I am a __student__ at
   * playing video games
   * going out for dinner
   * hanging out with friends
+
+#### Social Media
+
+* [Instagram](https://www.instagram.com/mikeady88/)
