@@ -12,6 +12,10 @@ Some of my *star* quality skills are:
 * Giving really good scratchies to my fur friends
 * Listening to the same songs on repeat for weeks on end without getting sick of them
 
+#### Contacts & Social Media
+
+* [Github](https://github.com/gwenchiasson)
+* [Insta](https://www.instagram.com/gc.capture/)
 
 ### Michael Eady
 
