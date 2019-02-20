@@ -1,3 +1,8 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+
 .tab {
   overflow: hidden;
   border: 1px solid #000;
@@ -5,6 +10,8 @@
 }
 
 .tab button {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
   background-color: #fff;
   float: left;
   border: #000;
@@ -23,7 +30,6 @@
 }
 
 .tabcontent {
-  display: none;
-  padding: 6px 12px;
+  padding: 1em;
   border: none;
 }
