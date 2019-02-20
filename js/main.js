@@ -2,18 +2,18 @@ let dogClients = [
   {
     name: `Pippy`,
     age: `3`,
-    potty: `Yes`,
-    fixed: `Yes`,
+    potty: `true`,
+    fixed: `true`,
     breed: `Cockapoo`,
     gender: `F`,
-    vaccine: `Yes`,
+    vaccine: `true`,
     dos: {
-      checkin: `March 1st`,
-      checkout: `March 3rd`
+      checkin: {m:3, d:1, y:2019},
+      checkout: {m:3, d:3, y:2019}
     },
     activities: [
-      {walking: {morning: `8:00`, evening: `17:00`}},
-      {feeding: {morning: `8:30`, evening: `18:00`}},
+      {walking: {morning: {h:8, m:0}, evening: {h:17, m:0}}},
+      {feeding: {morning: {h:18, m:0}, evening: {h:18, m:30}}},
       {medicaton: null},
     ],
     notes: `Pippy doesn't get along with other dogs very well. Avoid encounters when possible.`,
@@ -21,37 +21,41 @@ let dogClients = [
   {
     name: `Fluffers`,
     age: `2`,
-    potty: `Yes`,
-    fixed: `Yes`,
+    potty: `true`,
+    fixed: `true`,
     breed: `Pug`,
     gender: `F`,
-    vaccine: `Yes`,
+    vaccine: `true`,
     dos: {
-      checkin: `March 6th`,
-      checkout: `March 10th`
+      checkin: {m:3, d:6, y:2019},
+      checkout: {m:3, d:10, y:2019}
     },
     activities: [
-      {walking: {morning: `8:00`, evening: `17:30`}},
-      {feeding: {morning: `8:30`, evening: `19:00`}},
-      {medicaton: {type: `thyroid`, morning: `8:30`, evening: `19:00`}},
+      {walking: {morning: {h:8, m:30}, evening: {h:17, m:30}}},
+      {feeding: {morning: {h:9, m:0}, evening: {h:18, m:30}}},
+      {medicaton:
+        {type: `thyroid`},
+        morning: {h:9, m:0},
+        evening: {h:18, m:30}
+      },
     ],
     notes: `Make sure medication is taken with food. Enjoys belly scratches A LOT. `,
   },
   {
     name: `Bruce`,
     age: `6`,
-    potty: `Yes`,
-    fixed: `Yes`,
+    potty: `true`,
+    fixed: `true`,
     breed: `Chihuahua`,
     gender: `M`,
-    vaccine: `Yes`,
+    vaccine: `true`,
     dos: {
-      checkin: `March 2nd`,
-      checkout: `March 7th`
+      checkin: {m:3, d:2, y:2019},
+      checkout: {m:3, d:7, y:2019}
     },
     activities: [
-      {walking: {morning: `7:00`, evening: `16:00`}},
-      {feeding: {morning: `8:00`, evening: `17:00`}},
+      {walking: {morning: {h:7, m:0}, evening: {h:18, m:0}}},
+      {feeding: {morning: {h:7, m:30}, evening: {h:18, m:30}}},
       {medicaton: null},
     ],
     notes: null,
@@ -59,18 +63,18 @@ let dogClients = [
   {
     name: `Wayne`,
     age: `3`,
-    potty: `Yes`,
-    fixed: `Yes`,
+    potty: `true`,
+    fixed: `true`,
     breed: `White Bull Terrior`,
     gender: `F`,
-    vaccine: `Yes`,
+    vaccine: `true`,
     dos: {
-      checkin: `March 12th`,
-      checkout: `March 14th`
+      checkin: {m:3, d:12, y:2019},
+      checkout: {m:3, d:14, y:2019}
     },
     activities: [
-      {walking: {morning: `9:00`, evening: `17:30`}},
-      {feeding: {morning: `9:30`, evening: `17:00`}},
+      {walking: {morning: {h:8, m:0}, evening: {h:17, m:0}}},
+      {feeding: {morning: {h:9, m:0}, evening: {h:18, m:0}}},
       {medicaton: null},
     ],
     notes: `Scared of garbage cans.`,
@@ -78,18 +82,18 @@ let dogClients = [
   {
     name: `Shelly`,
     age: `4`,
-    potty: `Yes`,
-    fixed: `No`,
+    potty: `true`,
+    fixed: `false`,
     breed: `Dalmation`,
     gender: `F`,
-    vaccine: `Yes`,
+    vaccine: `true`,
     dos: {
-      checkin: `March 20th`,
-      checkout: `March 27th`
+      checkin: {m:3, d:20, y:2019},
+      checkout: {m:3, d:27, y:2019}
     },
     activities: [
-      {walking: {morning: `7:00`, evening: `17:00`}},
-      {feeding: {morning: `7:30`, evening: `18:00`}},
+      {walking: {morning: {h:8, m:0}, evening: {h:17, m:0}}},
+      {feeding: {morning: {h:8, m:30}, evening: {h:17, m:30}}},
       {medicaton: null},
     ],
     notes: `Shelly can be a little nippy at other dogs. Ensure to give her a long enough walk to exhaust some of her energy.`,

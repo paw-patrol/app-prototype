@@ -1,11 +1,14 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
-    font-size: 1em;
+    font-size: 14px;
 }
 
-header {
-  padding: 2em;
-  margin: auto;
+.wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr, 1fr, 1fr;
+  grid-gap: 1em;
 }
 
 .tab {
@@ -16,15 +19,16 @@ header {
 
 .tab button {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  font-size: 14px;
   background-color: #fff;
   float: left;
   border: #000;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 14px 20px;
   transition: 0.3s;
-  margin: auto;
+  justify-content: center;
+  /* margin: auto; */
 }
 
 .tab button:hover {
@@ -35,7 +39,6 @@ header {
   background-color: #rgb(119, 0, 201);
 }
 
-.tabcontent {
-  padding: 1em;
+/* .tabcontent {
   border: none;
-}
+} */
