@@ -36,6 +36,7 @@ header {
 }
 
 .tabcontent {
+  display: grid;
   padding: 1em;
   border: none;
 }
