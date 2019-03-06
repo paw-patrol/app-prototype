@@ -1,5 +1,6 @@
 let dogClients = [
   {
+    id: `01`
     name: `Pippy`,
     age: `3`,
     potty: `true`,
@@ -19,6 +20,7 @@ let dogClients = [
     notes: `Pippy doesn't get along with other dogs very well. Avoid encounters when possible.`,
   },
   {
+    id: `02`
     name: `Fluffers`,
     age: `2`,
     potty: `true`,
@@ -42,6 +44,7 @@ let dogClients = [
     notes: `Make sure medication is taken with food. Enjoys belly scratches A LOT. `,
   },
   {
+    id: `03`
     name: `Bruce`,
     age: `6`,
     potty: `true`,
@@ -61,6 +64,7 @@ let dogClients = [
     notes: null,
   },
   {
+    id: `03`
     name: `Wayne`,
     age: `3`,
     potty: `true`,
@@ -80,6 +84,7 @@ let dogClients = [
     notes: `Scared of garbage cans.`,
   },
   {
+    id: `04`
     name: `Shelly`,
     age: `4`,
     potty: `true`,
