@@ -12,8 +12,8 @@ let dogClients = [
       checkin: {m:3, d:1, y:2019},
       checkout: {m:3, d:3, y:2019}
     },
-    activity: [
-      {walking:
+    activity: {
+      walking:
         {morning:
           {id: 0, name: `8:00am`, complete: false}
           // {h:8, m:0},
@@ -28,7 +28,7 @@ let dogClients = [
           {id: 3, name: `6:30pm`, complete: false}
           // {h:18, m:30}}},
       {medicaton: null},
-    ],
+    },
     contact: {
       phone: `647-456-9877`,
       email: `pippy@gmail.com`
@@ -136,6 +136,10 @@ let dogClients = [
     notes: `Shelly can be a little nippy at other dogs. Ensure to give her a long enough walk to exhaust some of her energy.`,
   },
 ];
+
+
+let thatOnePerson = dogClients.filter(person => person.id == `01`);
+
 
 // var clients = dogClients.map(dc => dc.name);
 
