@@ -12,9 +12,21 @@ let dogClients = [
       checkin: {m:3, d:1, y:2019},
       checkout: {m:3, d:3, y:2019}
     },
-    activities: [
-      {walking: {morning: {h:8, m:0}, evening: {h:17, m:0}}},
-      {feeding: {morning: {h:18, m:0}, evening: {h:18, m:30}}},
+    activity: [
+      {walking:
+        {morning:
+          {id: 0, name: `8:00am`, complete: false}
+          // {h:8, m:0},
+          evening:
+          {id: 1, name: `5:00pm`, complete: false}
+          // {h:17, m:0}}},
+      {feeding:
+        {morning:
+            {id: 2, name: `8:30am`, complete: false}
+          // {h:8, m:30},
+          evening:
+          {id: 3, name: `6:30pm`, complete: false}
+          // {h:18, m:30}}},
       {medicaton: null},
     ],
     contact: {
@@ -129,4 +141,15 @@ let dogClients = [
 
 // console.log(clients);
 
-document.getElementById('about').innerHTML = dogClients.map(dc => `<li>${dc.name}</li>`).join('');
+// document.getElementById('about').innerHTML = dogClients.map(dc => `<ol>${dc.activity}</ol>`).join('');
+
+let toDo = document.getElementById('about');
+
+
+toDo.addEventListener('click', event => {
+  let theId = event.target.dataset.id;
+  dogClients.forEach(oneTask => {
+    if (oneTask.id == theId) {
+      oneTask.complete = !oneTask.complete;
+    }  })
+})
