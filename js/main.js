@@ -107,4 +107,22 @@ let pippySched = [
   {id: 0, name: evening meal, complete: false},
 ];
 
-console.log(dogClients);
+allTasks.addEventListener('click', event => {
+
+  if (event.target.matches('input')) {
+
+    let theId = event.target.dataset.id;
+
+    tasks.forEach(oneTask => {
+      if (oneTask.id == theId) {
+        oneTask.complete = !oneTask.complete;
+      }
+    });
+
+    printAllTasks();
+  }
+
+});
+
+
+printAllTasks();
