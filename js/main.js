@@ -107,4 +107,22 @@ let pippySched = [
   {id: 0, name: evening meal, complete: false},
 ];
 
+const allTasks = document.getElementById('allTasks');
+const theTaskForm = document.getElementById('newTask');
+
+theTaskForm.addEventListener('submit', event => {
+  tasks.push({
+    id: tasks.length,
+    name: theTaskForm.task.value,
+    complete: false
+  });
+
+  theTaskForm.task.value = '';
+
+
+  printAllTasks();
+
+  event.preventDefault();
+});
+
 console.log(dogClients);
