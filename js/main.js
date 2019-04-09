@@ -101,10 +101,10 @@ let dogClients = [
 ];
 
 let pippySched = [
-  {id: 0, name: `Morning walk`, complete: false},
-  {id: 1, name: `Morning meal`, complete: false},
-  {id: 2, name: `Evening walk`, complete: false},
-  {id: 3, name: `Evening meal`, complete: false},
+  {id: 0, name: `Morning walk - 8:00`, complete: false},
+  {id: 1, name: `Morning meal - 8:45`, complete: false},
+  {id: 2, name: `Evening walk - 17:30`, complete: false},
+  {id: 3, name: `Evening meal - 18:30`, complete: false},
 ];
 
 const allTasks = document.getElementById('allTasks');
