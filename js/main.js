@@ -125,4 +125,18 @@ theTaskForm.addEventListener('submit', event => {
   event.preventDefault();
 });
 
-console.log(dogClients);
+function printAllTasks() {
+
+  allTasks.innerHTML = tasks.map(oneTask =>
+    `<li class="task${  (oneTask.complete) ? ' complete' : ''  }">
+      <label>
+        <input type="checkbox"
+               data-id="${ oneTask.id }"
+               name="task${ oneTask.id }"
+               ${  (oneTask.complete) ? ' checked' : ''  }>
+        ${ oneTask.name }
+      </label>
+    </li>` ).join('');
+
+
+}
