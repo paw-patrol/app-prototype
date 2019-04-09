@@ -101,17 +101,17 @@ let dogClients = [
 ];
 
 let pippySched = [
-  {id: 0, name: `morning walk`, complete: false},
-  {id: 0, name: `morning meal`, complete: false},
-  {id: 0, name: `evening walk`, complete: false},
-  {id: 0, name: `evening meal`, complete: false},
+  {id: 0, name: `Morning walk`, complete: false},
+  {id: 1, name: `Morning meal`, complete: false},
+  {id: 2, name: `Evening walk`, complete: false},
+  {id: 3, name: `Evening meal`, complete: false},
 ];
 
 const allTasks = document.getElementById('allTasks');
 const theTaskForm = document.getElementById('newTask');
 
 theTaskForm.addEventListener('submit', event => {
-  tasks.push({
+  pippySched.push({
     id: pippySched.length,
     name: theTaskForm.task.value,
     complete: false
