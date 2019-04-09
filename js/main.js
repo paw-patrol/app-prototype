@@ -100,4 +100,11 @@ let dogClients = [
   },
 ];
 
+let pippySched = [
+  {id: 0, name: morning walk, complete: false},
+  {id: 0, name: morning meal, complete: false},
+  {id: 0, name: evening walk, complete: false},
+  {id: 0, name: evening meal, complete: false},
+];
+
 console.log(dogClients);
