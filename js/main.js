@@ -101,10 +101,10 @@ let dogClients = [
 ];
 
 let pippySched = [
-  {id: 0, name: morning walk, complete: false},
-  {id: 0, name: morning meal, complete: false},
-  {id: 0, name: evening walk, complete: false},
-  {id: 0, name: evening meal, complete: false},
+  {id: 0, name: `morning walk`, complete: false},
+  {id: 0, name: `morning meal`, complete: false},
+  {id: 0, name: `evening walk`, complete: false},
+  {id: 0, name: `evening meal`, complete: false},
 ];
 
 const allTasks = document.getElementById('allTasks');
@@ -112,7 +112,7 @@ const theTaskForm = document.getElementById('newTask');
 
 theTaskForm.addEventListener('submit', event => {
   tasks.push({
-    id: tasks.length,
+    id: pippySched.length,
     name: theTaskForm.task.value,
     complete: false
   });
@@ -131,7 +131,7 @@ allTasks.addEventListener('click', event => {
 
     let theId = event.target.dataset.id;
 
-    tasks.forEach(oneTask => {
+    pippySched.forEach(oneTask => {
       if (oneTask.id == theId) {
         oneTask.complete = !oneTask.complete;
       }
@@ -145,7 +145,7 @@ allTasks.addEventListener('click', event => {
 
 function printAllTasks() {
 
-  allTasks.innerHTML = tasks.map(oneTask =>
+  allTasks.innerHTML = pippySched.map(oneTask =>
     `<li class="task${  (oneTask.complete) ? ' complete' : ''  }">
       <label>
         <input type="checkbox"
