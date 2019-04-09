@@ -107,6 +107,39 @@ let pippySched = [
   {id: 0, name: evening meal, complete: false},
 ];
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 allTasks.addEventListener('click', event => {
 
   if (event.target.matches('input')) {
