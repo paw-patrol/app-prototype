@@ -107,37 +107,22 @@ let pippySched = [
   {id: 0, name: evening meal, complete: false},
 ];
 
+const allTasks = document.getElementById('allTasks');
+const theTaskForm = document.getElementById('newTask');
 
+theTaskForm.addEventListener('submit', event => {
+  tasks.push({
+    id: tasks.length,
+    name: theTaskForm.task.value,
+    complete: false
+  });
 
+  theTaskForm.task.value = '';
 
+  printAllTasks();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  event.preventDefault();
+});
 
 
 allTasks.addEventListener('click', event => {
@@ -158,25 +143,6 @@ allTasks.addEventListener('click', event => {
 });
 
 
-printAllTasks();
-const allTasks = document.getElementById('allTasks');
-const theTaskForm = document.getElementById('newTask');
-
-theTaskForm.addEventListener('submit', event => {
-  tasks.push({
-    id: tasks.length,
-    name: theTaskForm.task.value,
-    complete: false
-  });
-
-  theTaskForm.task.value = '';
-
-
-  printAllTasks();
-
-  event.preventDefault();
-});
-
 function printAllTasks() {
 
   allTasks.innerHTML = tasks.map(oneTask =>
@@ -190,5 +156,6 @@ function printAllTasks() {
       </label>
     </li>` ).join('');
 
+};
 
-}
+printAllTasks();
